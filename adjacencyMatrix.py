@@ -1,4 +1,4 @@
-
+# add node in 2d matrix
 def add_node(v):
     global nodes_count
     if v in nodes:
@@ -11,6 +11,7 @@ def add_node(v):
         temp = [0]*nodes_count
         graph.append(temp)    
 
+# add connection between two adjacency nodes u and v
 def add_edge(u, v, cost=1):
     if u in nodes and v in nodes:
         u_index = nodes.index(u)
